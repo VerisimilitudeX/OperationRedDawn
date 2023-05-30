@@ -28,7 +28,7 @@ public class Puzzles {
             
             System.out.println("IMPORTANT: You will only see the clue for 1 second, so be ready.");
             System.out.print("Processing request");
-            for (int i = 0; i < 10; i++) {
+            for (int i = 0; i < 10000; i++) {
                 Thread.sleep(500);
                 System.out.print(".");
             }
