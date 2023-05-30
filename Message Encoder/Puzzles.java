@@ -22,8 +22,9 @@ public class Puzzles {
 
     public static void main(String[] args) throws InterruptedException, IOException {
         while (true) {
+            
             clearTerminal();
-            System.out.println("Welcome to the Universal Communication Device. Enter a transfer code (\"stop\" to exit): ");
+            System.out.println("Welcome to the Universal Communication Device. Enter a recipient code (\"stop\" to exit): ");
             String input = System.console().readLine();
             
             System.out.println("IMPORTANT: You will only see the clue for 1 second, so be ready.");
