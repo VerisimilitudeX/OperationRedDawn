@@ -25,7 +25,7 @@ public class Puzzles {
             clearTerminal();
             System.out.println("Enter a code (\"stop\" to exit): ");
             String input = System.console().readLine();
-            
+
             System.out.println("IMPORTANT: You will only see the clue for 1 second, so be ready.");
             System.out.print("Processing request");
             for (int i = 0; i < 3; i++) {
