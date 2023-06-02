@@ -3,9 +3,10 @@ import java.io.IOException;
 public class Puzzles {
     public static String getClue(String input) {
         String clue = switch (input) {
-            case "1234" -> "hello";
-            case "1105" -> "george kennan";
-            case "2966" -> "rishabh is a bozo";
+            case "8531" -> "2";
+            case "1634" -> "5";
+            case "4168" -> "9";
+            case "1687" -> "1";
             default -> "No noticable response was recieved.";
         };
         return clue;
@@ -29,7 +30,7 @@ public class Puzzles {
 
             System.out.println("IMPORTANT: You will only see the clue for 1 second, so be ready.");
             System.out.print("Processing request");
-            for (int i = 0; i < 10; i++) {
+            for (int i = 0; i < 3; i++) {
                 Thread.sleep(500);
                 System.out.print(".");
             }
