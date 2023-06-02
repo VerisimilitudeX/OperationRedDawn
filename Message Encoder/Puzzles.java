@@ -3,9 +3,10 @@ import java.io.IOException;
 public class Puzzles {
     public static String getClue(String input) {
         String clue = switch (input) {
-            case "1234" -> "hello";
-            case "1105" -> "george kennan";
-            case "2966" -> "rishabh is a bozo";
+            case "8531" -> "2";
+            case "1634" -> "5";
+            case "4168" -> "9";
+            case "1687" -> "1";
             default -> "No noticable response was recieved.";
         };
         return clue;
