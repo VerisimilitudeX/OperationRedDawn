@@ -6,7 +6,7 @@ public class Puzzles {
             case "1234" -> "hello";
             case "1105" -> "george kennan";
             case "2966" -> "rishabh is a bozo";
-            default -> "Incorrect code entered.";
+            default -> "No noticable response was recieved.";
         };
         return clue;
     }
@@ -22,13 +22,14 @@ public class Puzzles {
 
     public static void main(String[] args) throws InterruptedException, IOException {
         while (true) {
+            
             clearTerminal();
-            System.out.println("Enter a code (\"stop\" to exit): ");
+            System.out.println("Welcome to the Universal Communication Device. Enter a recipient code (\"stop\" to exit): ");
             String input = System.console().readLine();
 
             System.out.println("IMPORTANT: You will only see the clue for 1 second, so be ready.");
             System.out.print("Processing request");
-            for (int i = 0; i < 3; i++) {
+            for (int i = 0; i < 10; i++) {
                 Thread.sleep(500);
                 System.out.print(".");
             }
