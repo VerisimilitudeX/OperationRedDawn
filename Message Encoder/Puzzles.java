@@ -3,10 +3,11 @@ import java.io.IOException;
 public class Puzzles {
     public static String getClue(String input) {
         String clue = switch (input) {
-            case "8531" -> "2";
-            case "1634" -> "5";
-            case "4168" -> "9";
-            case "1687" -> "1";
+            case "5673" -> "No noticable response was recieved."; //Placeholder for lock
+            case "8531" -> "4";
+            case "1634" -> "9"; 
+            case "4168" -> "3";
+
             default -> "No noticable response was recieved.";
         };
         return clue;
