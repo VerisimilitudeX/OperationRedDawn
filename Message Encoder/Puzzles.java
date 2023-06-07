@@ -1,16 +1,18 @@
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Puzzles {
     public static String getClue(String input) {
-        String clue = switch (input) {
-            case "5673" -> "No noticable response was recieved."; //Placeholder for lock
-            case "8531" -> "4";
-            case "1634" -> "9"; 
-            case "4168" -> "3";
+        // Use a map to store the input-clue pairs
+        Map<String, String> clues = new HashMap<>();
+        clues.put("5673", "No noticable response was recieved."); //Placeholder for lock
+        clues.put("8531", "4");
+        clues.put("1634", "9");
+        clues.put("4168", "3");
 
-            default -> "No noticable response was recieved.";
-        };
-        return clue;
+        // Return the clue for the input or a default value if not found
+        return clues.getOrDefault(input, "No noticable response was recieved.");
     }
 
     public static void clearTerminal() throws InterruptedException, IOException {
